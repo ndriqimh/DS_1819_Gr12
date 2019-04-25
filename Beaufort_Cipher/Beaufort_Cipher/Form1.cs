@@ -18,31 +18,7 @@ namespace Beaufort_Cipher
             InitializeComponent();
             Beaufort.Alfabeti = "abcdefghijklmnopqrstuvwxyz";
         }
-        /*
-        private string pregadit(string str)
-        {
-            return new Regex(@"[\W\d]").Replace(str, String.Empty).ToLower();
-        }
-        private string formatiOrigjinal(string origjinal, string enkodim)
-        {
-            string shkrVogel = origjinal.ToLower(); // string lowerCase
-
-            for (int i = 0; i < origjinal.Length; i++)
-            {
-                if (Beaufort.Alfabeti.IndexOf(shkrVogel[i]) != -1)
-                {
-                    string newLetter = (shkrVogel[i] == origjinal[i]) ?
-                        enkodim[0].ToString() :
-                        enkodim[0].ToString().ToUpper();
-
-                    origjinal = origjinal.Remove(i, 1).Insert(i, newLetter);
-                    enkodim = enkodim.Remove(0, 1);
-                }
-            }
-
-            return origjinal;
-        }
-        */
+       
 
 
         private void EncodeButton_Click(object sender, EventArgs e)
